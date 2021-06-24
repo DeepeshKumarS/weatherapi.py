@@ -25,7 +25,7 @@ print ("Current weather desc  :",weather_desc)
 print ("Current Humidity      :",hmdt, '%')
 print ("Current wind speed    :",wind_spd ,'kmph') 
 
-report = open("weather.text","w")
+report = open("weather.text","a+")
 report.write ("-------------------------------------------------------------")
 report.write("Weather Stats for - {}  || {}".format(location.upper(), date_time))
 report.write("-------------------------------------------------------------")
